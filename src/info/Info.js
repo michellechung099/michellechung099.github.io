@@ -4,8 +4,13 @@ import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 export let colors = ["rgb(181, 221, 255)", "rgb(217, 152,255)"];
+
+library.add(fab);
+
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
@@ -67,11 +72,11 @@ export const info = {
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
-        // {
-        //     link: "https://twitter.com",
-        //     icon: "fa fa-twitter",
-        //     label: 'twitter'
-        // }
+        {
+            link: "https://wellfound.com/u/michelle-chung-16",
+            icon: "fa fa-angellist",
+            label: 'angellist'
+        }
     ],
     bio: "Hello! I'm Michelle. I recently finished a software engineering bootcamp at App Academy and studied Consumer Economics and Finance at University of Illinois - Urbana Champaign. I enjoy gaming, doing yoga, and reading philosophy books on my free time. Similar to the view of Heraclitus, I believe my goal in life is to comprehend and understand all that I experience, and never stop learning!",
     skills:

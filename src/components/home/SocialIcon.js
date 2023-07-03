@@ -10,10 +10,11 @@ function SocialIcon(props) {
     return (
         <a target="_blank" aria-label={label}
            rel="noopener noreferrer" href={link}>
-           {isReactComponent
-              ? React.createElement(icon, { style: iconStyle })
-              : <i className={icon} aria-hidden="true"/>
-           }
+           {isReactComponent ? (
+                React.createElement(icon, { style: iconStyle })
+            ) : (
+                <i className={icon} aria-hidden="true"/>
+           )}
         </a>
     );
 }
