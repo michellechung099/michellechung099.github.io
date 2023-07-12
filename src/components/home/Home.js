@@ -26,8 +26,8 @@ export default function Home() {
             </Box>
             <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}} >
                {info.socials.map((social, index) => (
-                  <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} size={(social.label === 'resume' || social.label === 'mail') ? '2rem' : undefined}
-                  marginTop={(social.label === 'resume' || social.label === 'mail') ? '8px' : undefined} />
+                  <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} size={(social.label === 'resume' || social.label === 'mail') ? '100%' : undefined}
+                  marginTop={(social.label === 'resume' || social.label === 'mail') ? '11%' : undefined} />
                ))}
             </Box>
          </Box>
